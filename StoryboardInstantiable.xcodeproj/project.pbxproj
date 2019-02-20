@@ -18,7 +18,26 @@
 		FB7FC8362218599000D5678D /* UIViewController+StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FC8342218599000D5678D /* UIViewController+StoryboardInstantiable.swift */; };
 		FB7FC8372218599000D5678D /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FC8352218599000D5678D /* StoryboardInstantiable.swift */; };
 		FB99EF4322185C1400659ED0 /* StoryboardInstantiable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB71C5862218589100119AA2 /* StoryboardInstantiable.framework */; };
+		FBE3B576221CF7F7007777D1 /* StoryboardInstantiableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE3B575221CF7F7007777D1 /* StoryboardInstantiableTests.swift */; };
+		FBE3B578221CF7F7007777D1 /* StoryboardInstantiable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB71C5862218589100119AA2 /* StoryboardInstantiable.framework */; };
+		FBE3B583221CF8F7007777D1 /* ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE3B582221CF8F7007777D1 /* ViewControllers.swift */; };
+		FBE3B585221CFC2A007777D1 /* UniversalViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE3B584221CFC2A007777D1 /* UniversalViewController.storyboard */; };
+		FBE3B587221CFC6B007777D1 /* IPhoneViewController_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE3B586221CFC6B007777D1 /* IPhoneViewController_iPhone.storyboard */; };
+		FBE3B589221CFC82007777D1 /* IPadViewController_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE3B588221CFC82007777D1 /* IPadViewController_iPad.storyboard */; };
+		FBE3B58B221CFD3A007777D1 /* OverrideViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE3B58A221CFD3A007777D1 /* OverrideViewController.storyboard */; };
+		FBE3B58D221CFD5E007777D1 /* OverrideViewController_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE3B58C221CFD5E007777D1 /* OverrideViewController_iPhone.storyboard */; };
+		FBE3B58F221CFD82007777D1 /* OverrideViewController_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE3B58E221CFD82007777D1 /* OverrideViewController_iPad.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBE3B579221CF7F7007777D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB71C57D2218589100119AA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB71C5852218589100119AA2;
+			remoteInfo = StoryboardInstantiable;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FB71C5862218589100119AA2 /* StoryboardInstantiable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StoryboardInstantiable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +54,16 @@
 		FB7FC8322218592D00D5678D /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
 		FB7FC8342218599000D5678D /* UIViewController+StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+StoryboardInstantiable.swift"; sourceTree = "<group>"; };
 		FB7FC8352218599000D5678D /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		FBE3B573221CF7F7007777D1 /* StoryboardInstantiableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryboardInstantiableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBE3B575221CF7F7007777D1 /* StoryboardInstantiableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiableTests.swift; sourceTree = "<group>"; };
+		FBE3B577221CF7F7007777D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBE3B582221CF8F7007777D1 /* ViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllers.swift; sourceTree = "<group>"; };
+		FBE3B584221CFC2A007777D1 /* UniversalViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UniversalViewController.storyboard; sourceTree = "<group>"; };
+		FBE3B586221CFC6B007777D1 /* IPhoneViewController_iPhone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IPhoneViewController_iPhone.storyboard; sourceTree = "<group>"; };
+		FBE3B588221CFC82007777D1 /* IPadViewController_iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IPadViewController_iPad.storyboard; sourceTree = "<group>"; };
+		FBE3B58A221CFD3A007777D1 /* OverrideViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OverrideViewController.storyboard; sourceTree = "<group>"; };
+		FBE3B58C221CFD5E007777D1 /* OverrideViewController_iPhone.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OverrideViewController_iPhone.storyboard; sourceTree = "<group>"; };
+		FBE3B58E221CFD82007777D1 /* OverrideViewController_iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OverrideViewController_iPad.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +82,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FBE3B570221CF7F7007777D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE3B578221CF7F7007777D1 /* StoryboardInstantiable.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +98,7 @@
 			children = (
 				FB7FC81F221858C700D5678D /* StoryboardInstantiableDemo */,
 				FB71C5882218589100119AA2 /* StoryboardInstantiable */,
+				FBE3B574221CF7F7007777D1 /* StoryboardInstantiableTests */,
 				FB71C5872218589100119AA2 /* Products */,
 				FB99EF4222185C1400659ED0 /* Frameworks */,
 			);
@@ -71,6 +109,7 @@
 			children = (
 				FB71C5862218589100119AA2 /* StoryboardInstantiable.framework */,
 				FB7FC81E221858C700D5678D /* StoryboardInstantiableDemo.app */,
+				FBE3B573221CF7F7007777D1 /* StoryboardInstantiableTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +145,54 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBE3B574221CF7F7007777D1 /* StoryboardInstantiableTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBE3B577221CF7F7007777D1 /* Info.plist */,
+				FBE3B575221CF7F7007777D1 /* StoryboardInstantiableTests.swift */,
+				FBE3B582221CF8F7007777D1 /* ViewControllers.swift */,
+				FBE3B57E221CF8C0007777D1 /* Storyboards */,
+			);
+			path = StoryboardInstantiableTests;
+			sourceTree = "<group>";
+		};
+		FBE3B57E221CF8C0007777D1 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FBE3B580221CF8CD007777D1 /* Device Specific */,
+				FBE3B581221CF8D4007777D1 /* Device Specific and Universal */,
+				FBE3B57F221CF8C7007777D1 /* Single Universal */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FBE3B57F221CF8C7007777D1 /* Single Universal */ = {
+			isa = PBXGroup;
+			children = (
+				FBE3B584221CFC2A007777D1 /* UniversalViewController.storyboard */,
+			);
+			path = "Single Universal";
+			sourceTree = "<group>";
+		};
+		FBE3B580221CF8CD007777D1 /* Device Specific */ = {
+			isa = PBXGroup;
+			children = (
+				FBE3B586221CFC6B007777D1 /* IPhoneViewController_iPhone.storyboard */,
+				FBE3B588221CFC82007777D1 /* IPadViewController_iPad.storyboard */,
+			);
+			path = "Device Specific";
+			sourceTree = "<group>";
+		};
+		FBE3B581221CF8D4007777D1 /* Device Specific and Universal */ = {
+			isa = PBXGroup;
+			children = (
+				FBE3B58A221CFD3A007777D1 /* OverrideViewController.storyboard */,
+				FBE3B58C221CFD5E007777D1 /* OverrideViewController_iPhone.storyboard */,
+				FBE3B58E221CFD82007777D1 /* OverrideViewController_iPad.storyboard */,
+			);
+			path = "Device Specific and Universal";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +244,24 @@
 			productReference = FB7FC81E221858C700D5678D /* StoryboardInstantiableDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FBE3B572221CF7F7007777D1 /* StoryboardInstantiableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBE3B57B221CF7F7007777D1 /* Build configuration list for PBXNativeTarget "StoryboardInstantiableTests" */;
+			buildPhases = (
+				FBE3B56F221CF7F7007777D1 /* Sources */,
+				FBE3B570221CF7F7007777D1 /* Frameworks */,
+				FBE3B571221CF7F7007777D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBE3B57A221CF7F7007777D1 /* PBXTargetDependency */,
+			);
+			name = StoryboardInstantiableTests;
+			productName = StoryboardInstantiableTests;
+			productReference = FBE3B573221CF7F7007777D1 /* StoryboardInstantiableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +277,9 @@
 						LastSwiftMigration = 1010;
 					};
 					FB7FC81D221858C700D5678D = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					FBE3B572221CF7F7007777D1 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -191,6 +299,7 @@
 			targets = (
 				FB7FC81D221858C700D5678D /* StoryboardInstantiableDemo */,
 				FB71C5852218589100119AA2 /* StoryboardInstantiable */,
+				FBE3B572221CF7F7007777D1 /* StoryboardInstantiableTests */,
 			);
 		};
 /* End PBXProject section */
@@ -211,6 +320,19 @@
 				FB7FC82B221858C800D5678D /* LaunchScreen.storyboard in Resources */,
 				FB7FC828221858C800D5678D /* Assets.xcassets in Resources */,
 				FB7FC826221858C700D5678D /* ViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE3B571221CF7F7007777D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE3B58D221CFD5E007777D1 /* OverrideViewController_iPhone.storyboard in Resources */,
+				FBE3B58F221CFD82007777D1 /* OverrideViewController_iPad.storyboard in Resources */,
+				FBE3B587221CFC6B007777D1 /* IPhoneViewController_iPhone.storyboard in Resources */,
+				FBE3B58B221CFD3A007777D1 /* OverrideViewController.storyboard in Resources */,
+				FBE3B585221CFC2A007777D1 /* UniversalViewController.storyboard in Resources */,
+				FBE3B589221CFC82007777D1 /* IPadViewController_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +358,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FBE3B56F221CF7F7007777D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE3B583221CF8F7007777D1 /* ViewControllers.swift in Sources */,
+				FBE3B576221CF7F7007777D1 /* StoryboardInstantiableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBE3B57A221CF7F7007777D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB71C5852218589100119AA2 /* StoryboardInstantiable */;
+			targetProxy = FBE3B579221CF7F7007777D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FB7FC824221858C700D5678D /* ViewController.storyboard */ = {
@@ -469,6 +608,42 @@
 			};
 			name = Release;
 		};
+		FBE3B57C221CF7F7007777D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HTVQW2NNE8;
+				INFOPLIST_FILE = StoryboardInstantiableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robtimpone.StoryboardInstantiableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBE3B57D221CF7F7007777D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HTVQW2NNE8;
+				INFOPLIST_FILE = StoryboardInstantiableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robtimpone.StoryboardInstantiableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -495,6 +670,15 @@
 			buildConfigurations = (
 				FB7FC82D221858C800D5678D /* Debug */,
 				FB7FC82E221858C800D5678D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBE3B57B221CF7F7007777D1 /* Build configuration list for PBXNativeTarget "StoryboardInstantiableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBE3B57C221CF7F7007777D1 /* Debug */,
+				FBE3B57D221CF7F7007777D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
