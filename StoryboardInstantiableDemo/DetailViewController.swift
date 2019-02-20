@@ -14,7 +14,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var displayLabel: UILabel!
     
     static func instantiate(withDisplayText displayText: String) -> DetailViewController {
-        let vc = DetailViewController.instantiateFromStoryboard()
+        let vc = try! DetailViewController.instantiateFromStoryboard()
         vc.displayText = displayText
         return vc
     }

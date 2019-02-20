@@ -15,29 +15,59 @@ extension UIViewController: StoryboardBased {
 
 extension StoryboardInstantiable where Self: UIViewController {
     
-    public static func instantiateFromStoryboard() -> Self {
+    public static func instantiateFromStoryboard(forDevice device: Device = UIDevice.current) throws -> Self {
         
-        let typeName = String(describing: self)
-        let storyboardName = self.storyboardName
         let bundle = Bundle(for: self)
-        
-        let storyboardFileExtension = "storyboardc"
-        let storyboardExists = bundle.path(forResource: storyboardName, ofType: storyboardFileExtension) != nil
-        
-        guard storyboardExists else {
-            fatalError("Unable to find a storyboard named '\(storyboardName)' in the bundle for type '\(typeName)'")
-        }
-        
+        let storyboardName = try self.storyboardName(forDevice: device, inBundle: bundle)
         let storyboard = UIStoryboard(name: storyboardName, bundle: bundle)
+        
         guard let initialViewController = storyboard.instantiateInitialViewController() else {
-            fatalError("Unable to find an initial view controller in storyboard named '\(storyboardName)'")
+            throw StoryboardInstantiationError.initialViewControllerMissing(storyboardName)
         }
         
         guard let instance = initialViewController as? Self else {
-            fatalError("The initial view controller in storyboard named '\(storyboardName)' is not of type \(typeName)")
+            let nameOfExpectedType = String(describing: self)
+            throw StoryboardInstantiationError.wrongTypeForInitialViewController(storyboardName, nameOfExpectedType)
         }
         
         return instance
+    }
+    
+    private static func storyboardName(forDevice device: Device, inBundle bundle: Bundle) throws -> String {
+        
+        let universalStoryboardName = storyboardName
+        let universalStoryboardExists = storyboardExists(inBundle: bundle, withName: universalStoryboardName)
+        
+        let deviceSpecificStoryboardExtension = try storyboardExtension(forDevice: device)
+        let deviceSpecificStoryboardName = storyboardName + deviceSpecificStoryboardExtension
+        let deviceSpecificStoryboardExists = storyboardExists(inBundle: bundle, withName: deviceSpecificStoryboardName)
+        
+        if deviceSpecificStoryboardExists {
+            return deviceSpecificStoryboardName
+        }
+        else if universalStoryboardExists {
+            return universalStoryboardName
+        }
+        else {
+            throw StoryboardInstantiationError.storyboardMissing(universalStoryboardName, deviceSpecificStoryboardName)
+        }
+    }
+    
+    private static func storyboardExtension(forDevice device: Device) throws -> String {
+        switch device.type {
+        case .iPhone:
+            return "_iPhone"
+        case .iPad:
+            return "_iPad"
+        case .unsupported:
+            throw StoryboardInstantiationError.unsupportedDeviceType
+        }
+    }
+    
+    private static func storyboardExists(inBundle bundle: Bundle, withName name: String) -> Bool {
+        
+        let storyboardFileExtension = "storyboardc"
+        return bundle.path(forResource: name, ofType: storyboardFileExtension) != nil
     }
 }
 
