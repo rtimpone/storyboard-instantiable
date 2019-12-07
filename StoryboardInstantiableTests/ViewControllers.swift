@@ -10,6 +10,7 @@ import UIKit
 
 class IPhoneViewController: UIViewController {}
 class IPadViewController: UIViewController {}
+class MissingStoryboardViewController: UIViewController {}
 class UniversalViewController: UIViewController {}
 
 class OverrideViewController: UIViewController {

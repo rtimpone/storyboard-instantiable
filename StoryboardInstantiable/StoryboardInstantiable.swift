@@ -46,7 +46,7 @@ extension UIDevice: Device {
     }
 }
 
-enum StoryboardInstantiationError: Error {
+enum StoryboardInstantiationError: Error, Equatable {
     
     /// The specified device type is not supported for instantiating from a storyboard
     case unsupportedDeviceType

@@ -60,6 +60,35 @@ class StoryboardInstantiableTests: XCTestCase {
         let labelText = vc?.label.text
         XCTAssertEqual(labelText, "iPad", "Expected the label's text to reflect the text present on the iPad-specific storyboard, since when a device specific storyboard and a universal storyboard are both available, the device-specific one overrides the universal one")
     }
+    
+    // Testing Error Cases
+    
+    func testNoStoryboards() {
+        let device = MockDevice(type: .iPhone)
+        XCTAssertThrowsError(try MissingStoryboardViewController.instantiateFromStoryboard(forDevice: device), "Expected instantiation to throw an error because a storyboard does not exist for this view controller type:") { error in
+            
+            XCTAssertEqual(error as? StoryboardInstantiationError, StoryboardInstantiationError.storyboardMissing("MissingStoryboardViewController", "MissingStoryboardViewController_iPhone"))
+        }
+    }
+    
+    func testMissingInitialViewController() {
+        
+    }
+    
+    func testInitialViewControllerIsWrongType() {
+        
+    }
+    func testWrongDeviceType() {
+
+    }
+
+    func testMispelledStoryboard() {
+        
+    }
+    
+    func testTildesInsteadOfUnderscores() {
+        
+    }
 }
 
 extension UIViewController {

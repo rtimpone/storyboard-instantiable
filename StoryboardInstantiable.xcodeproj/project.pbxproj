@@ -10,7 +10,7 @@
 		FB71C58B2218589100119AA2 /* StoryboardInstantiable.h in Headers */ = {isa = PBXBuildFile; fileRef = FB71C5892218589100119AA2 /* StoryboardInstantiable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB7FC821221858C700D5678D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FC820221858C700D5678D /* AppDelegate.swift */; };
 		FB7FC823221858C700D5678D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FC822221858C700D5678D /* ViewController.swift */; };
-		FB7FC826221858C700D5678D /* ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7FC824221858C700D5678D /* ViewController.storyboard */; };
+		FB7FC826221858C700D5678D /* ViewControllerFoo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7FC824221858C700D5678D /* ViewControllerFoo.storyboard */; };
 		FB7FC828221858C800D5678D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7FC827221858C800D5678D /* Assets.xcassets */; };
 		FB7FC82B221858C800D5678D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7FC829221858C800D5678D /* LaunchScreen.storyboard */; };
 		FB7FC8312218592700D5678D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7FC8302218592700D5678D /* DetailViewController.swift */; };
@@ -46,7 +46,7 @@
 		FB7FC81E221858C700D5678D /* StoryboardInstantiableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardInstantiableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7FC820221858C700D5678D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB7FC822221858C700D5678D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FB7FC825221858C700D5678D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ViewController.storyboard; sourceTree = "<group>"; };
+		FB7FC825221858C700D5678D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ViewControllerFoo.storyboard; sourceTree = "<group>"; };
 		FB7FC827221858C800D5678D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB7FC82A221858C800D5678D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB7FC82C221858C800D5678D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 			children = (
 				FB7FC820221858C700D5678D /* AppDelegate.swift */,
 				FB7FC822221858C700D5678D /* ViewController.swift */,
-				FB7FC824221858C700D5678D /* ViewController.storyboard */,
+				FB7FC824221858C700D5678D /* ViewControllerFoo.storyboard */,
 				FB7FC8302218592700D5678D /* DetailViewController.swift */,
 				FB7FC8322218592D00D5678D /* DetailViewController.storyboard */,
 				FB7FC827221858C800D5678D /* Assets.xcassets */,
@@ -319,7 +319,7 @@
 				FB7FC8332218592D00D5678D /* DetailViewController.storyboard in Resources */,
 				FB7FC82B221858C800D5678D /* LaunchScreen.storyboard in Resources */,
 				FB7FC828221858C800D5678D /* Assets.xcassets in Resources */,
-				FB7FC826221858C700D5678D /* ViewController.storyboard in Resources */,
+				FB7FC826221858C700D5678D /* ViewControllerFoo.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,12 +378,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FB7FC824221858C700D5678D /* ViewController.storyboard */ = {
+		FB7FC824221858C700D5678D /* ViewControllerFoo.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FB7FC825221858C700D5678D /* Base */,
 			);
-			name = ViewController.storyboard;
+			name = ViewControllerFoo.storyboard;
 			sourceTree = "<group>";
 		};
 		FB7FC829221858C800D5678D /* LaunchScreen.storyboard */ = {
